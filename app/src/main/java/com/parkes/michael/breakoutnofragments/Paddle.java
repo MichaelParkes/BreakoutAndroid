@@ -1,13 +1,11 @@
-package com.parkes.michael.mparkesproject;
+package com.parkes.michael.breakoutnofragments;
 
 import android.graphics.RectF;
 
 /**
- * Created by MParkes on 2/23/2016.
+ * Created by MParkes on 3/2/2016.
  */
 public class Paddle {
-
-    // RectF is an object that holds four coordinates - just what we need
     private RectF rect;
 
     // How long and high our paddle will be
@@ -39,7 +37,7 @@ public class Paddle {
         length = 130;
         height = 20;
 
-        // Start paddle in roughly the sceen centre
+        // Start paddle in roughly the screen centre
         x = screenX / 2;
         y = screenY - 20;
 
@@ -75,4 +73,5 @@ public class Paddle {
         rect.left = x;
         rect.right = x + length;
     }
+
 }

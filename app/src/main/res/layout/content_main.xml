@@ -9,21 +9,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.parkes.michael.mparkesproject.MainActivity"
+    tools:context="com.parkes.michael.breakoutnofragments.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:name="com.parkes.michael.mparkesproject.PlayScreenFragment"
+    <com.parkes.michael.breakoutnofragments.PlayScreenView
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
         android:id="@+id/PlayScreen"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:name="com.parkes.michael.mparkesproject.ControlsFragment"
+    <com.parkes.michael.breakoutnofragments.ControlsView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/Controls"
         android:layout_below="@+id/PlayScreen"
         android:layout_centerHorizontal="true" />

@@ -1,4 +1,4 @@
-package com.parkes.michael.mparkesproject;
+package com.parkes.michael.breakoutnofragments;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -45,7 +45,17 @@ public class PlayScreenView extends View {
         canvas.drawPaint(paint);
 
         paint.setColor(blue);
-        Paddle P = new Paddle(400,400);
+
+        //canvas.drawRect(400, 200, 300, 177, paint);
+
+        //left: distance of the left side of rectangular from left side of canvas.
+
+        //top:Distance of bottom side of rectangular from the top side of canvas
+
+        //right:distance of the right side of rectangular from left side of canvas.
+        //bottom: Distance of the top side of rectangle from top side of canvas.
+
+        Paddle P = new Paddle(400,200);
         canvas.drawRect(P.getRect(),paint);
     }
 }
