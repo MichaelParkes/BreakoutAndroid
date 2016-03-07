@@ -17,6 +17,7 @@ public class ControlsView extends View
     }
 
     public ControlsView(Context context, AttributeSet attrs){
+
         super(context, attrs);
     }
 
@@ -28,7 +29,8 @@ public class ControlsView extends View
     protected void onDraw(Canvas canvas)
     {
         super.onDraw(canvas);
-        int x = getWidth();
+
+        /*int x = getWidth();
         int y = getHeight();
         int blue = Color.rgb(0, 0, 255);
         int radius;
@@ -40,5 +42,6 @@ public class ControlsView extends View
         paint.setColor(blue);
         canvas.drawCircle(75, 60, radius, paint);
         canvas.drawCircle(1040, 60, radius, paint);
+        */
     }
 }

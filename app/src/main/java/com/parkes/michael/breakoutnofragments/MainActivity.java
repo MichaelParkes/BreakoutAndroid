@@ -10,6 +10,8 @@ import android.view.Display;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,21 +23,25 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        int screenX;
-        int screenY;
+        //BreakoutView breakoutView = new BreakoutView(this);
+        //setContentView(breakoutView);
 
-        Display display = getWindowManager().getDefaultDisplay();
-        // Load the resolution into a Point object
+
+        Display disp = getWindowManager().getDefaultDisplay();
         Point size = new Point();
-        display.getSize(size);
+        disp.getSize(size);
+        int ScreenSizeX = size.x;
+        int ScreenSizeY = size.y;
 
-        screenX = size.x;
-        screenY = size.y;
-
-        Paddle Corner = new Paddle(screenX,screenY);
+        Paddle Corner = new Paddle(ScreenSizeX,ScreenSizeY);
         
         ControlsView CV = (ControlsView) findViewById(R.id.Controls);
+        ImageView LeftContrl = (ImageView) CV.findViewById(R.id.imgLeftBut);
+        ImageView RightContrl = (ImageView) CV.findViewById(R.id.imgRightBut);
+
         PlayScreenView PV = (PlayScreenView) findViewById(R.id.PlayScreen);
+        //Corner = (Paddle) findViewById(R.id.)
+
 
     }
 

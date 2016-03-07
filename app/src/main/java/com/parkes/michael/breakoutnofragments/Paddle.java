@@ -39,8 +39,8 @@ public class Paddle {
 
         // Start paddle in roughly the screen centre
         x = screenX / 2;
-        y = screenY - 20;
-
+        //y = screenY - 20;
+        y = screenY+200;
         rect = new RectF(x, y, x + length, y + height);
 
         // How fast is the paddle in pixels per second

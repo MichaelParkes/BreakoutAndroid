@@ -25,4 +25,22 @@
         android:id="@+id/Controls"
         android:layout_below="@+id/PlayScreen"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLeftBut"
+        android:src="@drawable/blue_circle"
+        android:layout_alignTop="@+id/Controls"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgRightBut"
+        android:src="@drawable/blue_circle"
+        android:layout_alignBottom="@+id/imgLeftBut"
+        android:layout_alignRight="@+id/Controls"
+        android:layout_alignEnd="@+id/Controls" />
 </RelativeLayout>
